@@ -1,0 +1,11 @@
+Additional keyword arguments: {}
+demo_images/urdu/test3/out/19.jpg: توانا نواڑی حاجزی پکانا وضوابط
+demo_images/urdu/test3/out/20.jpg: چھوا پارو جہندہ عاداتیاں بھلیوں
+demo_images/urdu/test3/out/21.jpg: کےآثار منتی کلجھوشنداں مشائیت
+demo_images/urdu/test3/out/22.jpg: باالجزم نفاختہ مچاتے چکریلا تمازت
+demo_images/urdu/test3/out/23.jpg: تمثیلی اوری چلڑاؤ کھپلیاں اجود
+demo_images/urdu/test3/out/24.jpg: جردات نرگیرولین دارالترجمہ گنوانا
+demo_images/urdu/test3/out/25.jpg: گلاجڈد بجری فقیری دوہریت بھرائی
+demo_images/urdu/test3/out/26.jpg: مارکہ ہشکارتیں اصفہانی رریا خمریہ
+demo_images/urdu/test3/out/27.jpg: ناخواندہ زیدی جھکتی تضمین لتائیں
+demo_images/urdu/test3/out/28.jpg: گیاشہنراد تڑواتے ٹھاڑ لڑوا نافہ

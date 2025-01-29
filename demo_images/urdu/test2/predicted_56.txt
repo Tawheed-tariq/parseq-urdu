@@ -1,0 +1,12 @@
+Additional keyword arguments: {}
+demo_images/urdu/test2/out/0.jpg: ے۔پرسیمندوںکےزیچندھیں بھیںترتیہ اززیکا
+demo_images/urdu/test2/out/10.jpg: غیراکرمہ توپرن کیانداپآخوگ خورہیںہیںبذاق
+demo_images/urdu/test2/out/1.jpg: کے۔
+demo_images/urdu/test2/out/2.jpg: مین غ غجراک ایلیسےشامامیت رکتیں ارکیسنا
+demo_images/urdu/test2/out/3.jpg: سکھنکاندزائیا کرتیںاریںکرمامین خفل ں ا جیج جن جاااوایایاارکایمااومکایکارایاای  یاو ااااسمرامو ا ممیری اوا و اا   مراورییی
+demo_images/urdu/test2/out/4.jpg: موجےآپ پان کےاحتراہےزیجندھر ماب مانکریںبتیں
+demo_images/urdu/test2/out/5.jpg: ے۔پریہیںیخےماماحتیں کتوندونداکی
+demo_images/urdu/test2/out/6.jpg: ہارت کےتوار وراس اماعت گزارہیں
+demo_images/urdu/test2/out/7.jpg: غیراکرم کیاکیاپ ذاگوں اپیےپنی ہاتھوں نیںملیا
+demo_images/urdu/test2/out/8.jpg: مبت پرت نکیںنیںمےانہیںانیےہاقوںی ملیاہے
+demo_images/urdu/test2/out/9.jpg: کابےرکسٹیلاوکیدہرے اندعاغذہر میکریکونیکونیں

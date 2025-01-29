@@ -1,0 +1,17 @@
+LICENSE
+NOTICE
+README.md
+pyproject.toml
+requirements/bench.txt
+requirements/dev.txt
+requirements/test.txt
+requirements/train.txt
+requirements/tune.txt
+strhub/__init__.py
+strhub.egg-info/PKG-INFO
+strhub.egg-info/SOURCES.txt
+strhub.egg-info/dependency_links.txt
+strhub.egg-info/requires.txt
+strhub.egg-info/top_level.txt
+strhub/models/abinet/LICENSE
+strhub/models/crnn/LICENSE
