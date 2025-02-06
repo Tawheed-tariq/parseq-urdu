@@ -1,16 +1,16 @@
-Image: images_predicted/image_0.png, Ground Truth: بت پرست: ہم ان بتوں کے ذریعے خدا کی بارگاہ میں قربت (نزدیکی)
-Image: images_predicted/image_1.png, Ground Truth: کرتے ہیں۔
-Image: images_predicted/image_2.png, Ground Truth: پیغمبراکرم: کیا یہ بت سننے کی صلاحیت رکھتے ہیں اور کیا یہ بت خدا
-Image: images_predicted/image_3.png, Ground Truth: کے حکم کی فرمانبرداری کرتے ہیں اور اس کی عبادت میں مشغول رہتے ہیں جس کی
-Image: images_predicted/image_4.png, Ground Truth: وجہ سے آپ لوگ ان کے احترام کے ذریعے خدا کا قرب حاصل کرتے ہیں؟
-Image: images_predicted/image_5.png, Ground Truth: بت پرست: نہیں یہ سننے کی صلاحیت نہیں رکھتے اور نہ ہی خدا کی
-Image: images_predicted/image_6.png, Ground Truth: عبادت کرنے والے اور اس کے اطاعت گزار ہیں۔
-Image: images_predicted/image_7.png, Ground Truth: پیغمبراکرم: کیا آپ لوگوں نے انہیں اپنے ہی ہاتھوں سے نہیں بنایا؟
-Image: images_predicted/image_8.png, Ground Truth: بت پرست: کیوں نہیں ہم نے انہیں اپنے ہاتھوں ہی سے بنایا ہے۔
-Image: images_predicted/image_9.png, Ground Truth: کی وجہ سے حرکت میں آئی جو ایک دوسرے کے ضد ہوں ظاہر ہے یہ مکن ہی نہیں
-Image: images_predicted/image_10.png, Ground Truth: پیغمبراکرم: تو پھر ان کے بنانے والے آپ لوگ خود ہی ہیں لہذا حق
-Image: images_predicted/image_11.png, Ground Truth: تو یہ تھا کہ یہ آپ کی پوجا کرتے۔ جب خداوند عالم آپ کے امور کے فوائد اور
-Image: images_predicted/image_12.png, Ground Truth: ہے۔ لہذا یہ دونوں نور اور ظلمت مخلوق ہیں اور خداوند قادر و قدیم کے حکم کے تحت
-Image: images_predicted/image_13.png, Ground Truth: کام کررہے ہیں ۔ دوئی پرست پیغمبراکرم کے سامنے عاجز ہوگئے لہذا اپنے سروں کو
-Image: images_predicted/image_14.png, Ground Truth: جھکا کر کہنے لگے ہمیں مہلت دیجئے تاکہ ہم اس مسئلے میں غورو فکر کرسکیں۔
-Image: images_predicted/image_15.png, Ground Truth: باطل دوئی پسند ہے حق لا شریک ہے
+Image: images_predicted/image_0.png, Ground Truth: میں معافی چاہتا ہوں۔ میں یہاں اجنبی ہوں۔
+Image: images_predicted/image_1.png, Ground Truth: پرخلافجہا۱ںقدرتکیجانبواپسیکانظریہ
+Image: images_predicted/image_2.png, Ground Truth: رتوحی۲۲دکادمبھرناعذربدترازگناہےاوراگرتروید
+Image: images_predicted/image_3.png, Ground Truth: مجھے انتظار کرنے میں کوئی اعتراض نہیں ہے۔
+Image: images_predicted/image_4.png, Ground Truth: اس۸تسعاطی۳۲آکلینڈفيظاهرالبلدوليسمعهغي
+Image: images_predicted/image_5.png, Ground Truth: محنت کے بغیر زندگی میں کوئی کامیابی حاصل نہیں کی جا سکتی۔
+Image: images_predicted/image_6.png, Ground Truth: ہتاچھیمثالہے۔۹سندھیرسمالخطہیعربیہےحالانکہ
+Image: images_predicted/image_7.png, Ground Truth: شاخسازی۵۲۴۴اسکیرضاکےخلافکرتےہو۔
+Image: images_predicted/image_8.png, Ground Truth: کےموافقاپنیاپنی۹۶۹خطیرکےتوبحکم(۴شام)کے
+Image: images_predicted/image_9.png, Ground Truth: پتھراؤ۴۲۲۲باغمولویانوارسبھاشما
+Image: images_predicted/image_10.png, Ground Truth: پہ۲اڑڈھائےوہتمامیہودیوںکیکتابوںمیں
+Image: images_predicted/image_11.png, Ground Truth: سمگلن۵۸۶۵گہائےاصغرکوتبجھولاتیت
+Image: images_predicted/image_12.png, Ground Truth: کشورصفتاندامکو۳آبادکرکےروحپاکنہادکو
+Image: images_predicted/image_13.png, Ground Truth: الہے،توکوئ۶۴۵ینئیباتپیداکیجئے،اندازِبیان
+Image: images_predicted/image_14.png, Ground Truth: ستمپیشہن۹۹ےمحسوساتکیدنیابدلڈالی
+Image: images_predicted/image_15.png, Ground Truth: گزشتہنصفصدیمیںہندو۲۶۹۷ستانکاشایدہیکوئیادیبیا

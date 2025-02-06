@@ -32,7 +32,7 @@ def print_results_table(results: list[Result], file=None):
 root_dir = 'data'
 train_dir = 'test'
 batch_size = 16
-img_size = [64, 500]
+img_size = [32, 400]
 charset_train = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[_`abcdefghijklmnopqrstuvwxyz{|}~¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿıŁłŒœŠšŸŽžƒˆˇˉ˘˙˚˛˜˝Ωπ؆؇؈؉؊؋،؍؎؏ؘؙؚؐؑؒؓؔؕؖؗ؛؝؞؟ؠءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهوىيًٌٍَُِّْٕٖٓٔٗ٘٠٪٫٬٭ٰٱٴٹٻپٿچڈڐڑژڙکڪګڬڭڮگڰڱڲڳڴڵڶڷڸڹںڻڽھڿۀہۂۃۄۅۉۊیۍۏېۑےۓ۔ەۮۯ۰۱۲۳۴۵۶۷۸۹ۺۻۼ''""․ﷺ"
 charset_test = charset_train
 max_label_length = 120
@@ -47,7 +47,7 @@ datamodule = SceneTextDataModule(root_dir, train_dir, img_size, max_label_length
                                 remove_whitespace=remove_whitespace, normalize_unicode=normalize_unicode)
 
 # Load the latest checkpoint
-checkpoints = glob('/home/tawheed/parseq/outputs/parseq/2025-01-11_13-44-12/checkpoints/epoch=0-step=1353000-val_accuracy=57.5649-val_NED=91.7873.ckpt')
+checkpoints = glob('/home/tawheed/parseq/outputs/parseq/urdu_400x32/checkpoints/last.ckpt')
 checkpoint_path = sorted(checkpoints)[-1]
 print("Loaded checkpoint:", checkpoint_path)
 model = load_from_checkpoint(checkpoint_path, charset_test=charset_test).eval().to('cuda')

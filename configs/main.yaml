@@ -13,13 +13,13 @@ model:
   charset_train: " ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهويًٍَُِّْٖٓٔٗ٠٤٥٫ٰٹپچڈڑژکگںھہۂۃیېےۓ۔۰۱۲۳۴۵۶۷۸۹‘’“”؀؁؂؃؄؅؆؇؈؉؊؋؎؏ؘؙؚؐؑؒؓؕؖؗ؞ػؼؽؾؿٯ٭٪٬!@؍ؔ؛؟!'\"()%*-./0123456789:[]_{}ABCDEFGHIKLMNOPRSTUWYZabcdefghijklmnoprstuvwxz،#$%^&*+=|><"
   # For charset_test, ordering doesn't matter.
   charset_test: " !'\"()%*-./0123456789:[]_{}ABCDEFGHIKLMNOPRSTUWYZabcdefghijklmnoprstuvwxz،؍ؔ؛؟ءآأؤإئابةتثجحخدذرزسشصضطظعغفقكلمنهويًٍَُِّْٖٓٔٗ٠٤٥٫ٰٹپچڈڑژکگںھہۂۃیېےۓ۔۰۱۲۳۴۵۶۷۸۹‘’“”؀؁؂؃؄؅؆؇؈؉؊؋؎؏ؘؙؚؐؑؒؓؕؖؗ؞ػؼؽؾؿٯ٭٪٬!@#$%^&*+=|><"
-  batch_size: 8
+  batch_size: 32
   weight_decay: 0.0
   warmup_pct: 0.075  # equivalent to 1.5 epochs of warm up
 
 data:
   _target_: strhub.data.module.SceneTextDataModule
-  root_dir: /DATA/Tawheed/large_data
+  root_dir: /DATA/Tawheed/parseq_data
   train_dir: train
   batch_size: ${model.batch_size}
   img_size: ${model.img_size}

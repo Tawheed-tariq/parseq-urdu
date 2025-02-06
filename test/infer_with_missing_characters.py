@@ -93,9 +93,9 @@ def process_files(gt_txt_path, pred_txt_dir, missed_chars_log_path):
     return calculate_metrics(comparison_data, missed_chars_log_path)
 
 # Example usage
-gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/UPTI/gt.txt"  # Path to your ground truth txt file
-pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/UPTI/pred_32'  # Directory containing prediction files
-missed_chars_log_path = '/home/tawheed/parseq/data/crr-wrr/custom/missed_chars_32.json'  # Path to save missed characters log
+gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/new/gt.txt"  # Path to your ground truth txt file
+pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/new/pred'  # Directory containing prediction files
+missed_chars_log_path = '/home/tawheed/parseq/data/crr-wrr/new/missed_chars_32.json'  # Path to save missed characters log
 
 crr, wrr = process_files(gt_txt_path, pred_txt_dir, missed_chars_log_path)
 

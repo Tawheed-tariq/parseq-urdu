@@ -82,8 +82,8 @@ def process_files(gt_txt_path, pred_txt_dir):
     return calculate_metrics(comparison_data)
 
 # Example usage
-gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/IIITH/gt.txt"  # Path to your ground truth txt file
-pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/IIITH/pred_32'  # Directory containing prediction files
+gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/new/gt.txt"  # Path to your ground truth txt file
+pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/new/pred'  # Directory containing prediction files
 crr, wrr = process_files(gt_txt_path, pred_txt_dir)
 
 print(f"Correct Recognition Rate (CRR): {crr}%")

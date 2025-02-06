@@ -1,5 +1,5 @@
 # Define the input file path for the ground truth
-file_path = "/home/tawheed/parseq/data/crr-wrr/UPTI/gt.txt"  # Replace with your file's path
+file_path = "/home/tawheed/TextRecognition/trdg/out/labels.txt"  # Replace with your file's path
 
 try:
     # Read the file
