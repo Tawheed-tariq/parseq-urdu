@@ -1,0 +1,12 @@
+Additional keyword arguments: {}
+demo_images/urdu/test2/out/0.jpg: مت پرست ہم ان موں کے خدار ناگاہ میں قرصا ہس قریل کے زری کا دیک
+demo_images/urdu/test2/out/10.jpg: پنمبر اکرم توپھران کے ٹانے والے آپ لوگ خودہی ابذا حق
+demo_images/urdu/test2/out/1.jpg: ...........تھا....................
+demo_images/urdu/test2/out/2.jpg: ا۰۰۱چغج کرم کرم کیاحیت طاحیت کے ہیںادرکیابہتخدا
+demo_images/urdu/test2/out/3.jpg: اکے مکانرابداریںکرتےہیںاوراں مشغول مشغول خرک
+demo_images/urdu/test2/out/4.jpg: ا دجہے آپ لوگ لنا کےاترام ذریع خداکا قرب حامل کرتےہیں'
+demo_images/urdu/test2/out/5.jpg: ہت پرست کہیں یہ ملاجیت کیت کھتاورنہ اورنہ خداکی
+demo_images/urdu/test2/out/6.jpg: عبات کرنے اور اور کے اطاعت گزار ہیں۔
+demo_images/urdu/test2/out/7.jpg: چمبر اکرم کیاکیا لوگوں نے اپنے ایے ھوں مایا:
+demo_images/urdu/test2/out/8.jpg: بت پرست کیوں کیں ہم نے کمیں اپچے اٹھول سلیاہی سہلاہے
+demo_images/urdu/test2/out/9.jpg: کا دجرے حرکت میں آئی دوسرے کے ضدہوں ظاہرے مگن یمگن بی نہی

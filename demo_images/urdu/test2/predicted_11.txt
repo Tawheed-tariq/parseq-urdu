@@ -1,0 +1,12 @@
+Additional keyword arguments: {}
+demo_images/urdu/test2/out/0.jpg: مت پرست ہملان اندول کے خداکی خدارگا مٹن قرت قرد کیا
+demo_images/urdu/test2/out/10.jpg: پیخیر اکرم توپھران کےہٹانے والے آپ آوگ خودی ہیں امزا احق
+demo_images/urdu/test2/out/1.jpg: میں آپ میں سکتے ہیں ہے ہیں ہے۔
+demo_images/urdu/test2/out/2.jpg: آپ سچیخمراکرم کیابیہ بے تنکی صلاجیت کتے ہیں کیابیہت خدا
+demo_images/urdu/test2/out/3.jpg: ا کے کی زانداری کے ہوں کی عادت شخل مشول کے س لا
+demo_images/urdu/test2/out/4.jpg: ا دجہ آئیادگ لانا کاشرام کےذریع خداکا قرب حاصل کرتے ہیں؟
+demo_images/urdu/test2/out/5.jpg: ہت پرست کلیں بیہ غنے صلاجیت گنا رکھتا اورنی خداک
+demo_images/urdu/test2/out/6.jpg: خہادت کےوالے اوراس کےاطاعت گزار پہیں
+demo_images/urdu/test2/out/7.jpg: چھیر اکرم کیا کیا لوگنے اخنے ایے ماتھل سے گھلیے گی ہلاً
+demo_images/urdu/test2/out/8.jpg: بت پریت کیواں کیں صفا کنا لیا اٹھولا اٹھولیا سہلیا ہے
+demo_images/urdu/test2/out/9.jpg: کادجہ حرکت ٹیں گگی جراکی دورے کےشدول ظاہرے ناہرے بی نہل

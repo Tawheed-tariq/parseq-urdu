@@ -1,0 +1,11 @@
+Additional keyword arguments: {}
+demo_images/urdu/test3/out/19.jpg: ٹاٹا واڑی حاجزی پکانا دوضو ابط
+demo_images/urdu/test3/out/20.jpg: چھوا بارو چہندہ تاداتیاں پھلوں
+demo_images/urdu/test3/out/21.jpg: کےاخار منتی گلبھوشن نداح فشائیت
+demo_images/urdu/test3/out/22.jpg: بالجزم نفاخیتہ مچاتے چکر بلازت
+demo_images/urdu/test3/out/23.jpg: تمثیلی اوری چلڑاؤ کھپلیاں اجود
+demo_images/urdu/test3/out/24.jpg: مجردات نرگیرواین دارالتوجحہ گنوانا
+demo_images/urdu/test3/out/25.jpg: گاجڈو بجری تقیری دوہریت بچرائی
+demo_images/urdu/test3/out/26.jpg: مارکہ ہشکارتیں اصفہانی ریا خمریہ
+demo_images/urdu/test3/out/27.jpg: ناخواندہ زیدی جھکتی نضمین لتائیں
+demo_images/urdu/test3/out/28.jpg: کیاشتہراد ترواتے ٹھاڑ لڑوا نافہ
