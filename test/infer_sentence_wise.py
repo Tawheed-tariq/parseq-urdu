@@ -7,6 +7,18 @@ from nltk.metrics import edit_distance
 def normalize_text(text):
     return unicodedata.normalize('NFKD', text)
 
+def preprocess_gt(gt_lines):
+    processed_lines = []
+    for line in gt_lines:
+        # Split by whitespace and remove the first part (assumed to be the image name)
+        parts = line.split(maxsplit=1)
+        if len(parts) > 1:
+            processed_lines.append(parts[1].strip())  # Keep only the text portion
+        else:
+            processed_lines.append("")  # Handle cases where no text follows the image name
+    return processed_lines
+
+
 # Function to calculate CRR and WRR
 def calculate_metrics(data):
     correct = 0
@@ -41,7 +53,7 @@ def process_files(gt_txt_path, pred_txt_dir):
         gt_lines = f.readlines()
     
     # Strip newlines and any extra whitespace
-    gt_lines = [line.strip() for line in gt_lines]
+    gt_lines = preprocess_gt(gt_lines)
 
     comparison_data = []
 
@@ -70,8 +82,8 @@ def process_files(gt_txt_path, pred_txt_dir):
     return calculate_metrics(comparison_data)
 
 # Example usage
-gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/new/gt.txt"  # Path to your ground truth txt file
-pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/new/pred'  # Directory containing prediction files
+gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/UPTI/gt.txt"  # Path to your ground truth txt file
+pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/UPTI/pred'  # Directory containing prediction files
 crr, wrr = process_files(gt_txt_path, pred_txt_dir)
 
 print(f"Correct Recognition Rate (CRR): {crr}%")
