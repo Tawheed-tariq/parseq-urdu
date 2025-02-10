@@ -27,4 +27,4 @@ def inspect_lmdb(lmdb_path):
             except Exception as e:
                 print(f"Error loading image {i}: {e}")
 
-inspect_lmdb('/DATA/Tawheed/parseq_data/train/synth_10')
+inspect_lmdb('/DATA/Tawheed/parseq_data/val/UTRSet-Real')

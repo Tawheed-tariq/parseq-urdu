@@ -1,0 +1,89 @@
+Train datasets
+
+TRDG 6 million:
+
+Number of samples in LMDB: 6000000
+Sample 1: Label = مراختہ خوردنی بحالت الطبیعیاتی مخرشات جیتتی ششدری رنڈ فلیٹوں ويڈیوڈے, Image Size = (1217, 120)
+Sample 2: Label = انفصام مراتع شافا ٹھاس دغیلا اضوا برمانا چمپٹی کشتگار کارگردی, Image Size = (1367, 120)
+Sample 3: Label = نوپر جوزنیاں کراسیا ابرار سنوارا مشاع ذرورات لوہے متعارفہ تقاضائے, Image Size = (1151, 120)
+Sample 4: Label = کوٹنگ ریشم شجرطور مہین ادیکھی عشیہ تیکونی ال پھوپیرا بنوئی, Image Size = (887, 120)
+Sample 5: Label = تلہائی دیانتی زائش مخالف جسہ مجبورانہ سنکی دہانگ بقول ملالت, Image Size = (1617, 120)
+
+TRDG 10 million:
+
+Number of samples in LMDB: 9999975
+Sample 1: Label = طبعیہ جرمانے اغل پھروک بھیجیز, Image Size = (264, 64)
+Sample 2: Label = فسح اعتزازی پھنت ساعد گدما, Image Size = (390, 64)
+Sample 3: Label = قجریاں نوچی وقائع گدپڑیوں مین, Image Size = (285, 64)
+Sample 4: Label = ہلائے ستالی ذیل قاہرہبہت کتروائیں, Image Size = (413, 64)
+Sample 5: Label = حاضروغائب مربیء نادرشاہی موزا جاکنا, Image Size = (339, 64)
+
+SynthTiger 10 million:
+
+divided in chunks 2,2,2,4
+
+Number of samples in LMDB: 2000000
+Sample 1: Label = اس کے پاس منحنی خطوط وحدانی ہے۔, Image Size = (1340, 87)
+Sample 2: Label = اس نے ایک مضحکہ خیز کہانی سنائی, Image Size = (757, 71)
+Sample 3: Label = میں اب مزید انتظار نہیں کر سکتا, Image Size = (987, 74)
+Sample 4: Label = اپنی ماں کے ساتھ اچھا سلوک کرو, Image Size = (871, 85)
+Sample 5: Label = دھوبیوں۳۳۹پہونچانےکیکوششکریںگے, Image Size = (1352, 119)
+
+Number of samples in LMDB: 2000000
+Sample 1: Label = لیگسیس۷یمدیردم۵الکمولویکیادالعزمیاورحبرسولکاثبوتہ, Image Size = (1532, 127)
+Sample 2: Label = ۲۴۹۲قافیہبندیسرکیاراچھسنہنگِقلزمِ, Image Size = (909, 105)
+Sample 3: Label = تکک۳۲۵ہعاشقکاکچاعشقہے۔عاشقجباپنےعشقمینکاملہ, Image Size = (1572, 74)
+Sample 4: Label = ریٹھ۴۵۶اسروے۶۱۵ٹھکانہنہیںرہاتھا۔ایس, Image Size = (1530, 90)
+Sample 5: Label = مجھےمعلومہے۲۹۸۷۔۔۔۔۔آپجمالیاتاورحسنکےشکارہیں, Image Size = (1663, 115)
+
+Number of samples in LMDB: 2000000
+Sample 1: Label = اسیوقتدےرہاہو۱ں۔سرآلیورگرجاتمنےمیرےسام, Image Size = (1248, 107)
+Sample 2: Label = ۔اوراباسےخیالآرہاتھ۳۱اکہبہتممکنتھاکہان, Image Size = (1540, 122)
+Sample 3: Label = مت۷۵۴واتراظہارکےلئےبھیکھلےہوئ۰ےتھے۔انہوںنے, Image Size = (1866, 119)
+Sample 4: Label = ہمت اور عزم سے ہر مقصد حاصل کیا جا سکتا ہے۔, Image Size = (1555, 91)
+Sample 5: Label = اچھ۲ا؟میںاسےاپنیسالگرہپرانوائیٹکردوںگا, Image Size = (976, 113)
+
+Number of samples in LMDB: 4048921
+Sample 1: Label = فرش۷توننےکیاسجدہصفیکوکسکےباعثسے, Image Size = (818, 71)
+Sample 2: Label = ...........تھا...................., Image Size = (1123, 63)
+Sample 3: Label = شاہمحمدعلیازمریدا۰۰نمیرجہاںشاہ،شاہجہاںآباد, Image Size = (1379, 102)
+Sample 4: Label = کےحسنکوبھیڈرامائیفن۱۱۷کےلازمیعناصرمیںسےایکج, Image Size = (1463, 92)
+Sample 5: Label = زندگی میں کامیابی حاصل کرنے کے لیے صرف عزم اور محنت کی ضرورت ہے۔, Image Size = (2284, 58)
+
+
+Val Datasets:
+
+SynthTiger 0.15 million 
+Number of samples in LMDB: 150000
+Sample 1: Label = کیا۔آ۔آ!پیٹرنےح۵۴۳یرتسےکہا۔آپاسہتککوبردا, Image Size = (1128, 78)
+Sample 2: Label = یمساجد،اس۰۲۴۵لامیمراکزاوراوقافکےتحفظوبقاءکیم, Image Size = (1715, 84)
+Sample 3: Label = غرض۶ریویوموصولہوئیہیںاُنپرآئندہبالترتیبتب, Image Size = (1250, 140)
+Sample 4: Label = کیا آپ کو کل رات نیند نہیں آئی؟, Image Size = (1878, 102)
+Sample 5: Label = رقليلمنالرجال۷۵۵۰.وكانتالمادةفيمثلذلكيومئذ, Image Size = (1361, 91)
+
+trdg 0.05 million 
+Number of samples in LMDB: 50000
+Sample 1: Label = بسواس سکلدمبر چولہے انگوریا چمپین ذکار مجوریاں اقعا پشکر ڈائنامو براہمہ موستا, Image Size = (1007, 100)
+Sample 2: Label = زمخت ریویو وادی مواد ریشمیت سائڈ ٹھاڑھ رمضی نڑجو مدارچہ رگید میتھانول, Image Size = (2140, 100)
+Sample 3: Label = طیوری پریا ماجدہ بھلبھلا ثمین جاثی پہلے ذہانتیاں ککے تعمیہ گاور پوسٹ, Image Size = (1139, 100)
+Sample 4: Label = چوندیاں نہس زرآتشدان ہروتیاں ابدالی نوق انطلاقی خواہشات بوجھائیاں الشفتین سربریدہ مجرد, Image Size = (2608, 100)
+Sample 5: Label = ریڈار خطیریت الرغم سروِس فرنگی عدوان سازوبرگ مجعولیت گندھربی جغرافیہ مصنع مٹیارے, Image Size = (1916, 100)
+
+
+UPTI 
+
+Number of samples in LMDB: 2010
+Sample 1: Label = سکتا ہے۔این ایچ ایس پروٹیکٹ نے ایمپلائرز پر زور دیا, Image Size = (809, 78)
+Sample 2: Label = ہے کہ این ایچ ایس سٹاف پر حملوں کے تمام, Image Size = (652, 81)
+Sample 3: Label = منحرف ہو گئے اور کہا کہ عدالت عالیہ نے انٹریاں, Image Size = (745, 79)
+Sample 4: Label = واقعات پر سخت کارروائی کی جائے۔ انہوں نے کہا کہ, Image Size = (787, 82)
+Sample 5: Label = مجھے یقین ہے کہ حملوں میں اضافہ کے اعدادوشمار حملوں, Image Size = (849, 76)
+
+
+UTRSet-Real
+Number of samples in LMDB: 9065
+Sample 1: Label = اندراج و تحریر شرعاً صرف مستحب اور پسندیدہ ہے وہ واجب نہیں کہ کسی شرعی, Image Size = (1723, 181)
+Sample 2: Label = اور ہندوستان کی مسلم ریاستوں میں اس پر کم و بیش عمل درآمد بھی ہے، جہاں تک جبری, Image Size = (1704, 192)
+Sample 3: Label = بلکہ اس کے نزدیک وہ پسندیدہ اور مستحسن بھی ہے، عملی پہلوکے لحاظ سے اسلامی سلطنتوں, Image Size = (1708, 181)
+Sample 4: Label = جہاں تک پہلی صورت کاتعلق ہے، شریعت اسلامیہ کی رو سے اس پر اعتراض جائز نہیں،, Image Size = (1719, 184)
+Sample 5: Label = ہے، اس لیے اس کولازمی طورپر جاری کردیاجائے، اس کانام جبر ی اندراج ہے،, Image Size = (1723, 146)
