@@ -1,6 +1,7 @@
 import os
 import json
 import unicodedata
+from collections import Counter
 from nltk.metrics import edit_distance
 
 # Normalize text using Unicode normalization
@@ -25,7 +26,7 @@ def calculate_metrics(data, missed_chars_log_path):
     total = 0
     ned = 0  
 
-    missed_chars = {}
+    missed_chars = Counter()
 
     for item in data:
         # Normalize ground truth and OCR text
@@ -45,13 +46,16 @@ def calculate_metrics(data, missed_chars_log_path):
             # Identify missed characters
             for char in gt:
                 if char not in ocr:
-                    missed_chars[char] = missed_chars.get(char, 0) + 1
+                    missed_chars[char] += 1
 
         total += 1
 
+    # Sort missed characters in decreasing order of frequency
+    sorted_missed_chars = dict(sorted(missed_chars.items(), key=lambda x: x[1], reverse=True))
+
     # Write missed characters to a file
     with open(missed_chars_log_path, 'w', encoding='utf-8') as f:
-        json.dump(missed_chars, f, ensure_ascii=False, indent=4)
+        json.dump(sorted_missed_chars, f, ensure_ascii=False, indent=4)
 
     wrr = (correct / total) * 100
     crr = (1 - ned / total) * 100
@@ -93,9 +97,9 @@ def process_files(gt_txt_path, pred_txt_dir, missed_chars_log_path):
     return calculate_metrics(comparison_data, missed_chars_log_path)
 
 # Example usage
-gt_txt_path = "/home/tawheed/parseq/data/crr-wrr/UPTI/gt.txt"  
-pred_txt_dir = '/home/tawheed/parseq/data/crr-wrr/UPTI/pred'  
-missed_chars_log_path = '/home/tawheed/parseq/data/crr-wrr/new/missed_chars_new.json'  
+gt_txt_path = "/DATA/Tawheed/data/crr-wrr/UTRSet-Real/gt.txt"  
+pred_txt_dir = '/DATA/Tawheed/data/crr-wrr/UTRSet-Real/pred'  
+missed_chars_log_path = '/home/tawheed/parseq/data/missed_chars/missed_chars_UTRSet-Real.json'  
 
 crr, wrr = process_files(gt_txt_path, pred_txt_dir, missed_chars_log_path)
 

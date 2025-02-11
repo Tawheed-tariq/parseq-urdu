@@ -1,5 +1,4 @@
 import os
-import json
 import unicodedata
 from nltk.metrics import edit_distance
 
@@ -8,27 +7,31 @@ def normalize_text(text):
     return unicodedata.normalize('NFKD', text)
 
 def preprocess_gt(gt_lines):
+    image_names = []
     processed_lines = []
+    
     for line in gt_lines:
-        # Split by whitespace and remove the first part (assumed to be the image name)
         parts = line.split(maxsplit=1)
         if len(parts) > 1:
-            processed_lines.append(parts[1].strip())  # Keep only the text portion
+            image_names.append(parts[0])  # Store image name
+            processed_lines.append(parts[1].strip())  # Store text portion
         else:
-            processed_lines.append("")  # Handle cases where no text follows the image name
-    return processed_lines
-
+            image_names.append(parts[0] if parts else "")
+            processed_lines.append("")
+    
+    return image_names, processed_lines
 
 # Function to calculate CRR and WRR
-def calculate_metrics(data):
+def calculate_metrics(data, image_names, output_file):
     correct = 0
     total = 0
     ned = 0  
+    errors = []
 
-    for item in data:
-        # Normalize ground truth and OCR text
+    for idx, item in enumerate(data):
         gt = normalize_text(item['gt'])
         ocr = normalize_text(item['ocr'])
+        image_name = image_names[idx]
 
         if max(len(ocr), len(gt)) == 0:
             dist = 0
@@ -39,26 +42,34 @@ def calculate_metrics(data):
 
         if ocr == gt:
             correct += 1
+        else:
+            errors.append(f"{image_name}\t\t\t{ocr}\t\t\t************************\t{gt}")  
 
         total += 1
 
     wrr = (correct / total) * 100
     crr = (1 - ned / total) * 100
 
+    # Write errors to output file
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(f"image_name\t\t\tground_truth\t\t\t************************\tpredicted_text\n")  
+        for error in errors:
+            f.write(error + "\n")
+
     return crr, wrr
 
-def process_files(gt_txt_path, pred_txt_dir):
-    # Load ground truth from txt file
+
+def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
     with open(gt_txt_path, 'r', encoding='utf-8') as f:
         gt_lines = f.readlines()
     
-    # Strip newlines and any extra whitespace
-    gt_lines = preprocess_gt(gt_lines)
+    image_names, gt_lines = preprocess_gt(gt_lines)
 
     comparison_data = []
 
-    # Iterate through each prediction txt file and process
     for idx, gt_text in enumerate(gt_lines):
+        if idx >= 50:
+            break
         pred_file_path = os.path.join(pred_txt_dir, f'{idx}.txt')
         
         if os.path.exists(pred_file_path):
@@ -69,7 +80,6 @@ def process_files(gt_txt_path, pred_txt_dir):
                     print(f"Error reading file {pred_file_path}: {str(e)}")
                     continue
             
-            # Prepare data for metric calculation
             comparison_data.append({
                 'gt': gt_text,
                 'ocr': ocr_text
@@ -78,13 +88,16 @@ def process_files(gt_txt_path, pred_txt_dir):
     if not comparison_data:
         raise ValueError("No valid comparison data found")
 
-    # Calculate and return CRR and WRR
-    return calculate_metrics(comparison_data)
+    return calculate_metrics(comparison_data, image_names, output_file)
+
 
 # Example usage
-gt_txt_path = "/DATA/Tawheed/data/crr-wrr/UPTI/gt.txt"  # Path to your ground truth txt file
-pred_txt_dir = '/DATA/Tawheed/data/crr-wrr/UPTI/pred'  # Directory containing prediction files
-crr, wrr = process_files(gt_txt_path, pred_txt_dir)
+gt_txt_path = "/DATA/Tawheed/data/crr-wrr/IIITH/gt.txt"
+pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/IIITH/pred"
+output_file = "../data/ocr_mistakes_IIITH.txt"
+
+crr, wrr = process_files(gt_txt_path, pred_txt_dir, output_file)
 
 print(f"Correct Recognition Rate (CRR): {crr}%")
 print(f"Word Recognition Rate (WRR): {wrr}%")
+print(f"Errors saved in: {output_file}")

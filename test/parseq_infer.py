@@ -51,8 +51,8 @@ def process_folder(folder_path, output_folder, parseq, img_transform, device, ba
                 print(f"Processed {image_file} in {fn-st:.4f} seconds.")
 
 def main():
-    main_folder_path = '/home/tawheed/parseq/data/crr-wrr/UPTI/images/'
-    output_folder_path = '/home/tawheed/parseq/data/crr-wrr/UPTI/pred'
+    main_folder_path = '/home/tawheed/parseq/data/crr-wrr/IIITH/images/'
+    output_folder_path = '/home/tawheed/parseq/data/crr-wrr/IIITH/pred'
     
     model_path = '/home/tawheed/parseq/outputs/parseq/2025-02-04_23-24-10/checkpoints/last.ckpt'
     # model_path = '/home/scai/mtech/aib232080/scratch/parseq/outputs/parseq/2024-10-14_14-16-56/checkpoints/epoch=3-step=76428-val_accuracy=4.5633-val_NED=19.6682.ckpt'

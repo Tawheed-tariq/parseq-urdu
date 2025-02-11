@@ -56,7 +56,7 @@ python test.py outputs/parseq/2025-01-11_13-44-12/checkpoints/last.ckpt --batch_
 
 # Read images
 ```
-python read.py outputs/parseq/2025-01-11_13-44-12/checkpoints/last.ckpt --images demo_images/urdu/test1/out/* > demo_images/urdu/test1/predicted_61.txt
+python read.py outputs/parseq/2025-02-04_23-24-10/checkpoints/last.ckpt --images demo_images/urdu/test2/out/* > demo_images/urdu/test2/predicted.txt
 ```
 
 
