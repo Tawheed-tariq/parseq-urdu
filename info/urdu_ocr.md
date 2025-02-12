@@ -4,6 +4,10 @@
     ```
         python run.py -l ur -c 10 -w 5 -f 64 -d 3 -k 5 -rk -bl 2 -rbl -b 3 -na 2 --word_split -t 5 --output_dir out/
     ```
+
+    ```
+    python run.py -l ur -c 10 -w 12 -f 120 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 --word_split -t 5 --output_dir out/ -stw 4 -fd fonts/ab -fi -m 1 -sw 0.5
+    ```
     Here -l means language to select
     -c means count
     -w means how many words to include in each image (width of image)
