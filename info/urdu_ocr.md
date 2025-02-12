@@ -1,12 +1,8 @@
 # data generation using TRDG
 - create a folder named ur in trdg/fonts and add urdu fonts in it
-- run command (to generate 10 million images of urdu):
+- run command (to generate images of urdu):
     ```
-        python run.py -l ur -c 10 -w 5 -f 64 -d 3 -k 5 -rk -bl 2 -rbl -b 3 -na 2 --word_split -t 5 --output_dir out/
-    ```
-
-    ```
-    python run.py -l ur -c 10 -w 12 -f 120 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 --word_split -t 5 --output_dir out/ -stw 4 -fd fonts/ab -fi -m 1 -sw 0.5
+    python run.py -l ur -c 10 -w 15 -f 150 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 -ws -t 5 -stw 4 -fd fonts/ab -fi -m 1 -sw 0.2 --output_dir out/
     ```
     Here -l means language to select
     -c means count
@@ -17,8 +13,14 @@
     -bl defines the blur value in image, -rbl selects blur value randomly in range [0, bl]
     -b defines the backgound type
     -na defines name format
-    --word_split : as urdu is a non-latin language in which, when characters are combined they make sense , so we need words here not characters only
+    -ws : as urdu is a non-latin language in which, when characters are combined they make sense , so we need words here not characters only
     -t means how many threads to make
+    -stw defines the width of stroke
+    -fd which font dir to use
+    -fi Apply a tight crop around the rendered text
+    -m margins
+    -sw width of space between words
+
 
 # Data generation using synthTiger
 
