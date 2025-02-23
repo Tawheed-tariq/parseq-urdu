@@ -6,7 +6,7 @@ trainer:
   devices: 1  # tuning with DDP is not yet supported.
 
 tune:
-  num_samples: 10
+  num_samples: 20
   gpus_per_trial: 1
   lr:
     min: 1e-4

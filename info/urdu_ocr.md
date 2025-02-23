@@ -4,6 +4,10 @@
     ```
     python run.py -l ur -c 10 -w 15 -f 150 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 -ws -t 5 -stw 4 -fd fonts/ab -fi -m 1 -sw 0.2 --output_dir out/
     ```
+
+    ```
+    python run.py -l kr -c 10 -w 10 -f 90 --output_dir out_kr/ -ws -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 -t 5 -stw 2 -fd fonts/new -fi -m 5 -sw 0.5
+    ```
     Here -l means language to select
     -c means count
     -w means how many words to include in each image (width of image)
@@ -27,11 +31,12 @@
 1. first of all prepare vocabulary for urdu language, add text file to `resources/corpus/`
 2. Add fonts to `resources/font/`
 3. Add charset to `resources/charset`
+`python tools/extract_font_charset.py -w 4 path_to_font_dir/`
 4. Now In the config files edit the vocab files , charset file and font file (as in `examples/synthtiger/config_horizontal.yaml`)
 5. Run the following command to generate images:
 
     ```
-    synthtiger -o results/ -w 12 -c 40 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config_horizontal.yaml
+    synthtiger -o results/ -w 7 -c 10 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config_horizontal.yaml
     ```
 
     where

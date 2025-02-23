@@ -68,7 +68,7 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
     comparison_data = []
 
     for idx, gt_text in enumerate(gt_lines):
-        if idx >= 50:
+        if idx >= 750:
             break
         pred_file_path = os.path.join(pred_txt_dir, f'{idx}.txt')
         
@@ -94,7 +94,7 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
 # Example usage
 gt_txt_path = "/DATA/Tawheed/data/crr-wrr/IIITH/gt.txt"
 pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/IIITH/pred"
-output_file = "../data/ocr_mistakes_IIITH.txt"
+output_file = "/home/tawheed/parseq/data/OCR_mistakes_IIITH.txt"
 
 crr, wrr = process_files(gt_txt_path, pred_txt_dir, output_file)
 

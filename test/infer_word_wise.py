@@ -23,7 +23,7 @@ def calculate_metrics(data):
         gt_dt = gt.split()
         gt_dt = gt_dt[1:]  # Remove the first string from gt_dt
         # WRR calculation (word-level comparison)
-        for ocr_word, gt_word in zip(ocr_dt[::-1], gt_dt[::-1]):  
+        for ocr_word, gt_word in zip(ocr_dt, gt_dt):  
             if ocr_word == gt_word:
                 correct_words += 1
             total_words += 1
