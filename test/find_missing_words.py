@@ -31,7 +31,8 @@ def calculate_metrics(data, image_names, output_file):
     for idx, item in enumerate(data):
         gt = normalize_text(item['gt'])
         ocr = normalize_text(item['ocr'])
-        image_name = image_names[idx]
+        # image_name = image_names[idx]
+        image_name = normalize_text(item['name'])
 
         if max(len(ocr), len(gt)) == 0:
             dist = 0
@@ -68,10 +69,9 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
     comparison_data = []
 
     for idx, gt_text in enumerate(gt_lines):
-        if idx >= 750:
+        if idx >= 2750:
             break
         pred_file_path = os.path.join(pred_txt_dir, f'{idx}.txt')
-        
         if os.path.exists(pred_file_path):
             with open(pred_file_path, 'r', encoding='utf-8') as f:
                 try:
@@ -81,6 +81,7 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
                     continue
             
             comparison_data.append({
+                'name':pred_file_path,
                 'gt': gt_text,
                 'ocr': ocr_text
             })
@@ -92,9 +93,9 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
 
 
 # Example usage
-gt_txt_path = "/DATA/Tawheed/data/crr-wrr/IIITH/gt.txt"
-pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/IIITH/pred"
-output_file = "/home/tawheed/parseq/data/OCR_mistakes_IIITH.txt"
+gt_txt_path = "/DATA/Tawheed/data/crr-wrr/UPTI/gt.txt"
+pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/UPTI/pred"
+output_file = "/home/tawheed/parseq/data/OCR_mistakes_UPTI.txt"
 
 crr, wrr = process_files(gt_txt_path, pred_txt_dir, output_file)
 

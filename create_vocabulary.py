@@ -9,7 +9,7 @@ def process_gt_file(gt_file_path, output_file_path):
             # Split at the first space to separate the filename from the text
             parts = line.split(' ', 1)
             if len(parts) > 1:
-                text = parts[1].strip()  # Get the text part
+                text = line.strip()  # Get the text part
                 words.extend(text.split())  # Split the text into words and add to the list
 
     # Write the words to the output file, one per line

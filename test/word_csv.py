@@ -1,5 +1,5 @@
 import os
-import json
+import pandas as pd
 import unicodedata
 from nltk.metrics import edit_distance
 
@@ -22,12 +22,12 @@ def calculate_metrics(data):
         ocr_dt = ocr.split()
         gt_dt = gt.split()
         gt_dt = gt_dt[1:]  # Remove the first string from gt_dt
+
         # WRR calculation (word-level comparison)
         for ocr_word, gt_word in zip(ocr_dt, gt_dt):  
             if ocr_word == gt_word:
                 correct_words += 1
             total_words += 1
-
 
         # NED calculation (word-level edit distance)
         for ocr_word, gt_word in zip(ocr_dt, gt_dt):
@@ -45,21 +45,23 @@ def calculate_metrics(data):
     # NED calculation (normalized across all words)
     ned = (total_word_edit_distance / total_words) * 100 if total_words > 0 else 0
     crr = ((1 - ned / total) * 100)
+
     return crr, wrr
 
-def process_files(gt_txt_path, pred_txt_dir):
-    # Load ground truth from txt file
-    with open(gt_txt_path, 'r', encoding='utf-8') as f:
-        gt_lines = f.readlines()
-    
-    # Strip newlines and any extra whitespace
-    gt_lines = [line.strip() for line in gt_lines]
+def process_files(gt_csv_path, pred_txt_dir):
+    # Load ground truth from CSV file
+    df = pd.read_csv(gt_csv_path)
+
+    if 'ground_truth' not in df.columns:
+        raise ValueError("CSV file must contain a 'ground_truth' column")
 
     comparison_data = []
 
-    # Iterate through each prediction txt file and process
-    for idx, gt_text in enumerate(gt_lines):
+    # Iterate through each row and process
+    for idx, row in df.iterrows():
+        gt_text = str(row['ground_truth']).strip()
         pred_file_path = os.path.join(pred_txt_dir, f'{idx}.txt')
+
         if os.path.exists(pred_file_path):
             with open(pred_file_path, 'r', encoding='utf-8') as f:
                 try:
@@ -81,9 +83,10 @@ def process_files(gt_txt_path, pred_txt_dir):
     return calculate_metrics(comparison_data)
 
 # Example usage
-gt_txt_path = "/DATA/Tawheed/data/crr-wrr/IIITH/gt.txt"  # Path to your ground truth txt file
-pred_txt_dir = '/DATA/Tawheed/data/crr-wrr/IIITH/pred'  # Directory containing prediction files
-crr, wrr = process_files(gt_txt_path, pred_txt_dir)
+gt_csv_path = "/DATA/Tawheed/new/UR-ST-101-images/gt.csv"  # Path to your ground truth CSV file
+pred_txt_dir = '/DATA/Tawheed/new/UR-ST-101-pred/'  # Directory containing prediction files
+
+crr, wrr = process_files(gt_csv_path, pred_txt_dir)
 
 print(f"Correct Recognition Rate (CRR): {crr}%")
 print(f"Word Recognition Rate (WRR): {wrr}%")
