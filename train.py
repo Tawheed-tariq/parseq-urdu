@@ -91,7 +91,7 @@ def main(config: DictConfig):
     checkpoint = ModelCheckpoint(
         monitor='val_accuracy',
         mode='max',
-        save_top_k=10,
+        save_top_k=10, #the best k models according to the quantity monitored will be saved.
         save_last=True,
         filename='{epoch}-{step}-{val_accuracy:.4f}-{val_NED:.4f}',
     )

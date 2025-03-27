@@ -1,16 +1,3 @@
-Image: images_predicted/image_0.png, Ground Truth: میں معافی چاہتا ہوں۔ میں یہاں اجنبی ہوں۔
-Image: images_predicted/image_1.png, Ground Truth: پرخلافجہا۱ںقدرتکیجانبواپسیکانظریہ
-Image: images_predicted/image_2.png, Ground Truth: رتوحی۲۲دکادمبھرناعذربدترازگناہےاوراگرتروید
-Image: images_predicted/image_3.png, Ground Truth: مجھے انتظار کرنے میں کوئی اعتراض نہیں ہے۔
-Image: images_predicted/image_4.png, Ground Truth: اس۸تسعاطی۳۲آکلینڈفيظاهرالبلدوليسمعهغي
-Image: images_predicted/image_5.png, Ground Truth: محنت کے بغیر زندگی میں کوئی کامیابی حاصل نہیں کی جا سکتی۔
-Image: images_predicted/image_6.png, Ground Truth: ہتاچھیمثالہے۔۹سندھیرسمالخطہیعربیہےحالانکہ
-Image: images_predicted/image_7.png, Ground Truth: شاخسازی۵۲۴۴اسکیرضاکےخلافکرتےہو۔
-Image: images_predicted/image_8.png, Ground Truth: کےموافقاپنیاپنی۹۶۹خطیرکےتوبحکم(۴شام)کے
-Image: images_predicted/image_9.png, Ground Truth: پتھراؤ۴۲۲۲باغمولویانوارسبھاشما
-Image: images_predicted/image_10.png, Ground Truth: پہ۲اڑڈھائےوہتمامیہودیوںکیکتابوںمیں
-Image: images_predicted/image_11.png, Ground Truth: سمگلن۵۸۶۵گہائےاصغرکوتبجھولاتیت
-Image: images_predicted/image_12.png, Ground Truth: کشورصفتاندامکو۳آبادکرکےروحپاکنہادکو
-Image: images_predicted/image_13.png, Ground Truth: الہے،توکوئ۶۴۵ینئیباتپیداکیجئے،اندازِبیان
-Image: images_predicted/image_14.png, Ground Truth: ستمپیشہن۹۹ےمحسوساتکیدنیابدلڈالی
-Image: images_predicted/image_15.png, Ground Truth: گزشتہنصفصدیمیںہندو۲۶۹۷ستانکاشایدہیکوئیادیبیا
+Image: images_predicted/image_0.png, Ground Truth: دیلی
+Image: images_predicted/image_1.png, Ground Truth: بھرت نگر
+Image: images_predicted/image_2.png, Ground Truth: لیچر کیوں

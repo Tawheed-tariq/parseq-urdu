@@ -1,7 +1,0 @@
-Additional keyword arguments: {}
-demo_images/urdu/test1/out/0 copy.jpg: تنائلہ مید بدیلانی غلاع چچکاری
-demo_images/urdu/test1/out/1 copy.jpg: کاسالسلمین ڈرتے اجتالال بزین رین
-demo_images/urdu/test1/out/2 copy.jpg: الہیوں ڈیں پھاڑی قتتگاگی ہاہانہ
-demo_images/urdu/test1/out/3 copy.jpg: بانکریاں اخاح آبائیہ بوائیات اور
-demo_images/urdu/test1/out/4 copy.jpg: ارن اتماعی شاقودی اکاتا تار
-demo_images/urdu/test1/out/5 copy.jpg: شراد جلاسکے گزگی اگھاںھافلی مرشو

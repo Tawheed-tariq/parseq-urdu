@@ -47,7 +47,7 @@ datamodule = SceneTextDataModule(root_dir, train_dir, img_size, max_label_length
                                 remove_whitespace=remove_whitespace, normalize_unicode=normalize_unicode)
 
 # Load the latest checkpoint
-checkpoints = glob('/home/tawheed/parseq/outputs/parseq/urdu_400x32/checkpoints/last.ckpt')
+checkpoints = glob('/home/tawheed/parseq/outputs/parseq/2025-03-16_06-25-16/checkpoints/last.ckpt')
 checkpoint_path = sorted(checkpoints)[-1]
 print("Loaded checkpoint:", checkpoint_path)
 model = load_from_checkpoint(checkpoint_path, charset_test=charset_test).eval().to('cuda')

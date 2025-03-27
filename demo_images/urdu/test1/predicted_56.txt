@@ -1,7 +1,0 @@
-Additional keyword arguments: {}
-demo_images/urdu/test1/out/0 copy.jpg: ثنااللہ مید سیلانی لاج چکلاؤ
-demo_images/urdu/test1/out/1 copy.jpg: کاسلسلہ چھوڑتے ابتدا بھرنیں پیت
-demo_images/urdu/test1/out/2 copy.jpg: پاسپورٹس پھڑی مقت گم ٹھانہ
-demo_images/urdu/test1/out/3 copy.jpg: بانچی ابیضاض آشیا وہرنا تاروڈ
-demo_images/urdu/test1/out/4 copy.jpg: ارر التماعی شقاوتی لگاتا ٹابر
-demo_images/urdu/test1/out/5 copy.jpg: شرد چلاسکے گزرگا اٹھملاری رشتو

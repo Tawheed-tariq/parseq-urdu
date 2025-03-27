@@ -83,8 +83,8 @@ def process_files(gt_csv_path, pred_txt_dir):
     return calculate_metrics(comparison_data)
 
 # Example usage
-gt_csv_path = "/DATA/Tawheed/new/UR-ST-101-images/gt.csv"  # Path to your ground truth CSV file
-pred_txt_dir = '/DATA/Tawheed/new/UR-ST-101-pred/'  # Directory containing prediction files
+gt_csv_path = "/DATA/Tawheed/new/UR-Printed-images/gt.csv"  # Path to your ground truth CSV file
+pred_txt_dir = '/DATA/Tawheed/new/UR-Printed-pred/'  # Directory containing prediction files
 
 crr, wrr = process_files(gt_csv_path, pred_txt_dir)
 

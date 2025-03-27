@@ -18,8 +18,8 @@ def process_gt_file(gt_file_path, output_file_path):
             f.write(word + '\n')
 
 # Input and output file paths
-gt_file_path = "/home/tawheed/parseq/data/crr-wrr/UTRSet-Synth/gt.txt"  # Replace with the path to your input file
-output_file_path = "/home/tawheed/parseq/data/crr-wrr/UTRSet-Synth/vocab.txt"  # Replace with the desired output file path
+gt_file_path = "/home/tawheed/synthTigerUrdu/resources/corpus/ur_main_spc.txt"  # Replace with the path to your input file
+output_file_path = "vocab.txt"  # Replace with the desired output file path
 
 # Process the GT file
 process_gt_file(gt_file_path, output_file_path)

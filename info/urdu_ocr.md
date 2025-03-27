@@ -1,8 +1,10 @@
 # data generation using TRDG
 - create a folder named ur in trdg/fonts and add urdu fonts in it
 - run command (to generate images of urdu):
+
+    change the parameters as per your wish
     ```
-    python run.py -l ur -c 10 -w 15 -f 150 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 -ws -t 5 -stw 4 -fd fonts/ab -fi -m 1 -sw 0.2 --output_dir out/
+    python run.py -l ur -c 10 -w 10 -f 128 -d 3 -k 2 -rk -bl 1 -rbl -b 3 -na 2 -ws -t 55 -stw 2 -fd fonts/ab -fi -m 1 -sw 0.1 --output_dir out/
     ```
 
     ```
@@ -35,8 +37,9 @@
 4. Now In the config files edit the vocab files , charset file and font file (as in `examples/synthtiger/config_horizontal.yaml`)
 5. Run the following command to generate images:
 
+    change the width of image and other parameters as you want them
     ```
-    synthtiger -o results/ -w 7 -c 10 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config_horizontal.yaml
+    synthtiger -o /DATA/Tawheed/parseq_data/synth_3L -w 12 -c 300000 -v examples/synthtiger/template.py SynthTiger examples/synthtiger/config_horizontal.yaml
     ```
 
     where
@@ -67,7 +70,7 @@ python test.py outputs/parseq/2025-01-11_13-44-12/checkpoints/last.ckpt --batch_
 
 # Read images
 ```
-python read.py outputs/parseq/2025-02-04_23-24-10/checkpoints/last.ckpt --images demo_images/urdu/test2/out/* > demo_images/urdu/test2/predicted.txt
+python read.py /home/tawheed/parseq/outputs/parseq/2025-03-23_05-59-14/checkpoints/last.ckpt --images demo_images/urdu/test2/out/* > demo_images/urdu/test2/predicted_2.txt
 ```
 
 

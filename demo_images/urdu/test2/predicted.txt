@@ -1,12 +1,12 @@
 Additional keyword arguments: {}
-demo_images/urdu/test2/out/0.jpg: بت پرست جہم ان بتوں کے ذریعے خداکی بارگاہ میں قربت زنزدیکی أ
-demo_images/urdu/test2/out/10.jpg: پیغمبر اکرم مُ توپھران کےہنانے والے آپ لوگ خودہی ہيں لہذاحق
-demo_images/urdu/test2/out/1.jpg: کرتے ہیں ہیں ہیں ہیں ہیں ہیں می
-demo_images/urdu/test2/out/2.jpg: له پیغمبر اکرم کیا یہ یت سننے سننے صلاحیت رکھتے ہيں اورکیا یہ بت خدا
-demo_images/urdu/test2/out/3.jpg: آکے حکم کی فرمانبرداری کرتے ہيں اور اس کی عبادت ميں مشغول رہتےہیں جس کی
-demo_images/urdu/test2/out/4.jpg: وجہ سےآپ لوگ ان کے احترام کےذریعے خداکا قرب حاصل کرتے ہیں ہیں
-demo_images/urdu/test2/out/5.jpg: بت پرست بھنہیں یہ سننے کی صلاحیت نہیں رکھتے اور نہ ہی خداکی
+demo_images/urdu/test2/out/0.jpg: بت پرست .. ہم ان ہوں کے ذریعے خداکی بارگاہ میں قربت (نزدیکی)
+demo_images/urdu/test2/out/10.jpg: پیغمبر اکرم... توپھر ان کے ،مانے والے آپ لوگ خودہی ہیں لہذاحق
+demo_images/urdu/test2/out/1.jpg: کر َ تے ہیں۔
+demo_images/urdu/test2/out/2.jpg: المیں پیغبر اکرم : کیا یہ ،ت سننے کی صلاحیت رکھتے ہیں اورکیا یہ ت خدا
+demo_images/urdu/test2/out/3.jpg: الت کے حکم کی فرمانبرداری کرتے ہیں اوراس کی عبادت میں مشغول رہتے ہیں کی
+demo_images/urdu/test2/out/4.jpg: ٰ دجہ سے آپ سے آپ لوگ احترام کےذریعے خداکا قرب حاصل کرتے ہیں؟
+demo_images/urdu/test2/out/5.jpg: بت پرست ....... یہ سننے کی صلاحیت نمیں رکھتے اور نہ ہی خداکی
 demo_images/urdu/test2/out/6.jpg: عبادت کرنے والے اور اس کے اطاعت گزار ہیں۔
-demo_images/urdu/test2/out/7.jpg: پیغمبر اکرم مُکیا آپ لوگوں نے انہیں اپنے ہی ہاتھوں سےنہيں بنایا
-demo_images/urdu/test2/out/8.jpg: بت پرست بکیوں نہیں ہم نے انہیں اپنے ہاتھوں ہی سے بنایا ہے۔
-demo_images/urdu/test2/out/9.jpg: کی وجہ سےحرکت میں آئی جوایک دوسرے کے ضد ہوں ظاہر ہےممکن ہینہیں
+demo_images/urdu/test2/out/7.jpg: پیغمبر اکرمگ : کیا آپ لوگوں نے انہیں اپنے ہی ہاتھوں سے نہیں بنایا؟
+demo_images/urdu/test2/out/8.jpg: بت پرست پرست ؛ کیوں ہم نے انہیں اپنے ہاتھوں ہی سے ہٹایا ہے۔
+demo_images/urdu/test2/out/9.jpg: کی وجہ سے حرکت میں آئی جوایک دوسرے کے ضدہوں نظاہر ہے یمکن ہیں

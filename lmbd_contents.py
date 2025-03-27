@@ -10,7 +10,7 @@ def inspect_lmdb(lmdb_path):
         print(f"Number of samples in LMDB: {num_samples}")
 
         # Inspect first few entries
-        for i in range(1, min(num_samples + 1, 6)):  # Inspect first 5 sample
+        for i in range(1, min(num_samples + 1, 10)):  # Inspect first 5 sample
             image_key = f'image-{i:09d}'.encode()
             label_key = f'label-{i:09d}'.encode()
 
@@ -27,4 +27,4 @@ def inspect_lmdb(lmdb_path):
             except Exception as e:
                 print(f"Error loading image {i}: {e}")
 
-inspect_lmdb('/DATA/Tawheed/parseq_data/val/UTRSet-Real')
+inspect_lmdb('/DATA/Tawheed/temp/val/IIITH')
