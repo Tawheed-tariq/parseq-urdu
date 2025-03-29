@@ -41,7 +41,7 @@ trainer:
   accelerator: gpu
   devices: 1
 
-ckpt_path: null
+ckpt_path: /home/tawheed/parseq/outputs/parseq/2025-03-23_05-59-14/checkpoints/last.ckpt
 pretrained: null
 
 hydra:

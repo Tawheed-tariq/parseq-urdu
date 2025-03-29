@@ -51,11 +51,10 @@ def process_folder(folder_path, output_folder, parseq, img_transform, device, ba
                 print(f"Processed {image_file} in {fn-st:.4f} seconds.")
 
 def main():
-    main_folder_path = '/DATA/Tawheed/data/crr-wrr/IIITH/images'
-    output_folder_path = '/DATA/Tawheed/data/crr-wrr/IIITH/pred'
+    main_folder_path = '/DATA/Tawheed/data/crr-wrr/UPTI/images'
+    output_folder_path = '/DATA/Tawheed/data/crr-wrr/UPTI/pred'
     
-    model_path = '/home/tawheed/parseq/outputs/parseq/2025-03-23_05-59-14/checkpoints/epoch=2-step=782831-val_accuracy=13.3239-val_NED=84.6230.ckpt'
-    # model_path = '/home/scai/mtech/aib232080/scratch/parseq/outputs/parseq/2024-10-14_14-16-56/checkpoints/epoch=3-step=76428-val_accuracy=4.5633-val_NED=19.6682.ckpt'
+    model_path = '/home/tawheed/parseq/outputs/parseq/2025-03-23_05-59-14/checkpoints/epoch=10-step=1274154-val_accuracy=31.3888-val_NED=92.0311.ckpt'
     parseq = load_from_checkpoint(model_path).eval().to('cuda')  # Move the model to GPU
     
     img_transform = SceneTextDataModule.get_transform(parseq.hparams.img_size)
