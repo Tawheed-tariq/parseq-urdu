@@ -92,9 +92,9 @@ def unpack_mdb(data_dir, output_dir, gt_dir):
 
 
 # Set the path to the directory containing the .mdb files and the output directory
-data_dir = '/DATA/Tawheed/UPTI/'
-gt_dir = '/DATA/Tawheed/data/UPTI/'
-output_dir = '/DATA/Tawheed/data/UPTI/images'
+data_dir = '/DATA/Tawheed/parseq_data/train/UTRSet-Real/'
+gt_dir = '/DATA/Tawheed/UTR_real/'
+output_dir = '/DATA/Tawheed/UTR_real/images'
 
 # Unpack the data and labels from the .mdb files
 unpack_mdb(data_dir, output_dir, gt_dir)

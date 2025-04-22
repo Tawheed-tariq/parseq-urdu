@@ -93,9 +93,9 @@ def process_files(gt_txt_path, pred_txt_dir, output_file="ocr_mistakes.txt"):
 
 
 # Example usage
-gt_txt_path = "/DATA/Tawheed/data/crr-wrr/UPTI/gt.txt"
-pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/UPTI/pred"
-output_file = "/home/tawheed/parseq/data/OCR_mistakes_UPTI.txt"
+gt_txt_path = "/DATA/Tawheed/data/crr-wrr/IIITH/gt.txt"
+pred_txt_dir = "/DATA/Tawheed/data/crr-wrr/IIITH/pred"
+output_file = "/home/tawheed/ProjectIITD/parseq/data_test/OCR_mistakes_IIITH.txt"
 
 crr, wrr = process_files(gt_txt_path, pred_txt_dir, output_file)
 
